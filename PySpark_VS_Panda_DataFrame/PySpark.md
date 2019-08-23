@@ -142,13 +142,13 @@ df['logdisp'] = np.log(df.disp)
 ```Python
 import pyspark.sql.functions as F
 df.withColumn('logdisp'. F.log(df.disp))
-`
+```
 
 # Performance Tip: Keep it in the JVM whenever you can
 
-`import pyspark.sql.functions as F`
+```Python
+import pyspark.sql.functions as F`
 
-`
  abs,acos,add_months,approxCountDistinctD,approx_count_distinct,array,array_contains,asc,ascii,asin,atan,atan2,avg
 ,base64,bin,bitwiseNOT,broadcast,bround
 ,cbrt,ceil,coalesce,col,collect_list,collect_set,column,concat,concat_ws,conv,corr,cos,cosh,count,countDistinct,covar_pop,covar_samp
@@ -175,26 +175,26 @@ df.withColumn('logdisp'. F.log(df.disp))
 ,var_pop,var_samp,variance
 ,weekofyear,when,window
 ,year
-`
+```
 
 # Row Conditional Statements
 
 ## Pandas
-`
+```Python
 df['cond']=df.apply(lamda r:
   1 if r.mpg > 20 else 2 if r.cycl == 6 else 3,
   axis=1)
-`
+```
 
 ## PySpark
-`
+```Python
 import payspark.sql.function as F
 
 df.withColumn('cond',   \
   F.when(df.mpg > 20, 1) \
    .when(df.cyl == 6, 2) \
    .otherwise(3))
-`
+```
 
 # Python when Required
 
@@ -202,41 +202,39 @@ df.withColumn('cond',   \
 `df['disp1'] = df.disp.apply(lambda x: x+1)`
 
 ## PySpark
-`
+```Python
 import payspark.sql.function as F
 from payspark.sql.types import DoubleType
 
 fn = F.udf(lambda x: x+1, DoubleType())
 df.withColumn('disp', fn(df.disp))
-`
+```
 
 # Merge/Join DataFrames
 
 ## Pandas
-`
+```Python
 left.merge(right, on='key')
 left.merge(right, left_on='a', right_on='b')
-`
+```
 
 ## PySpark
-`
+```Python
 left.join(right, on='key')
 left.join(right, left.a == right.b)
-`
+```
 
 # Pivot Table
 
 ## Pandas
-`
+```Python
 pd.pivot_table(df, values='D', \
   index=['A','B'], columns=['C'], \
   aggfunc=np.sum)
-`
+```
 
 ## PySpark
-`
-df.groupBy("A", "B").pivot("C").sum("D")
-`
+`df.groupBy("A", "B").pivot("C").sum("D")`
 
 # Summary Statistics
 
@@ -246,9 +244,11 @@ df.groupBy("A", "B").pivot("C").sum("D")
 ## PySpark
 `df.describe().show` (only count, mean standard deviation, min, max)
 
-`df.selectExpr(
+```Python
+df.selectExpr(
    "percentile_approx(mpg, array(.25, .5, .75)) as mpg"
-   ).show()`
+   ).show()
+```
 
 # Histogram
 
@@ -264,10 +264,10 @@ df.groupBy("A", "B").pivot("C").sum("D")
 `n/a`
 
 ## PySpark
-`
+```Python
 df.createOrReplaceTempView('foo')
 df2 = spark.sql('select * from foo')
-`
+```
 
 # Make Sure To
 
@@ -296,7 +296,3 @@ Databricks has forms of visualization if you are running Spark DataFrames on dat
 ## SciKitLearn vs Spark
 
 Use Spark when memory forces you too.
-
-## When to use a UDF
-
-
