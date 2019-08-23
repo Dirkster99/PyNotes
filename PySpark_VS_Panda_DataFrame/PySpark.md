@@ -36,30 +36,36 @@ https://www.youtube.com/watch?v=XrpSRCwISdk
 
 ## Pandas
 `df`
+
 `df.head(10)`
 
 ## PySpark
 `df.show()`
+
 `df.show(10)`
 
 # Columns and Data Types
 
 ## Pandas
 `df.columns`
+
 `df.dtypes`
 
 ## PySpark
 `df.columns`
+
 `df.dtypes`
 
 # Rename Columns
 
 ## Pandas
 `df.columns = ['a', 'b', 'c']`
+
 `df.rename([columns = {'old': 'new'})`
 
 ## PySpark
 `df.toDF('a', 'b', 'c')`
+
 `df.withColumnRenamed('old', 'new')`
 
 # Drop Column
@@ -82,10 +88,12 @@ https://www.youtube.com/watch?v=XrpSRCwISdk
 
 ## Pandas
 `df[df.mpg < 20]`
+
 `df[(df.mpg < 20) & (df.cyl == 6)]`
 
 ## PySpark
 `df[df.mpg < 20]`
+
 `df[(df.mpg < 20) & (df.cyl == 6)]`
 
 # Add Column
