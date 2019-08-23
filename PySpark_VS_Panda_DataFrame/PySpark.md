@@ -119,23 +119,27 @@ Be careful with division by zero because its NULL in PySpark wheras its infinity
 # Aggregation
 
 ## Pandas
-`df.groupby(['cyl', 'gear'])  \
-   .agg({'mpg': 'mean', 'disp': 'min'})`
+```Python
+df.groupby(['cyl', 'gear'])  \
+   .agg({'mpg': 'mean', 'disp': 'min'})
+```
 
 ## PySpark
-`df.groupby(['cyl', 'gear'])  \
-   .agg({'mpg': 'mean', 'disp': 'min'})`
+```Python
+df.groupby(['cyl', 'gear'])  \
+   .agg({'mpg': 'mean', 'disp': 'min'})
+```
 
 # Standard Transformations
 
 ## Pandas
-`
+```Python
 import numpy as np
 df['logdisp'] = np.log(df.disp)
-`
+```
 
 ## PySpark
-`
+```Python
 import pyspark.sql.functions as F
 df.withColumn('logdisp'. F.log(df.disp))
 `
