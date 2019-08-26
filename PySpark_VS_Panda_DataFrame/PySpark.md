@@ -188,7 +188,9 @@ df['cond']=df.apply(lamda r:
 
 ## PySpark
 ```Python
-import payspark.sql.function as F
+# Build a new DataFrame column from a condition over existing dataframe values
+# Old and new DataFrame have the same numbers of rows
+import pyspark.sql.functions as F
 
 df.withColumn('cond',   \
   F.when(df.mpg > 20, 1) \
@@ -203,7 +205,7 @@ df.withColumn('cond',   \
 
 ## PySpark
 ```Python
-import payspark.sql.function as F
+import pyspark.sql.functions as F
 from payspark.sql.types import DoubleType
 
 fn = F.udf(lambda x: x+1, DoubleType())
