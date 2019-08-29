@@ -71,7 +71,7 @@ https://www.youtube.com/watch?v=XrpSRCwISdk
 # Drop Column
 
 ## Pandas
-`df = df.drop('mpg', axis=1)`
+`df.drop('mpg', axis=1)`
 
 ## PySpark
 `df = df.drop(mpg)`
