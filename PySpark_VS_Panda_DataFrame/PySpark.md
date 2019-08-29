@@ -71,10 +71,10 @@ https://www.youtube.com/watch?v=XrpSRCwISdk
 # Drop Column
 
 ## Pandas
-`df.drop('mpg', axis=1)`
+`df = df.drop('mpg', axis=1)`
 
 ## PySpark
-`df.drop(mpg)`
+`df = df.drop(mpg)`
 
 # Filtering
 
