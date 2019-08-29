@@ -147,7 +147,7 @@ df.withColumn('logdisp'. F.log(df.disp))
 # Performance Tip: Keep it in the JVM whenever you can
 
 ```Python
-import pyspark.sql.functions as F`
+import pyspark.sql.functions as F
 
  abs,acos,add_months,approxCountDistinctD,approx_count_distinct,array,array_contains,asc,ascii,asin,atan,atan2,avg
 ,base64,bin,bitwiseNOT,broadcast,bround
