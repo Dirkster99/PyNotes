@@ -1,6 +1,6 @@
 # PyNotes
 
-My notebook on using Python with Jupyter Notebook, PySpark etc
+My notebook on using Python with Jupyter Notebook, PySpark and other well known machine learning frameworks.
 
 - [PySpark Versus Panda DataFrames](PySpark_VS_Panda_DataFrame/PySpark.md)
 
