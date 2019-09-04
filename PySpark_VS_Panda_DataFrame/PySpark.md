@@ -111,6 +111,19 @@ or exsiting `df` variable in order to query/process the value later on.
 
 Be careful with division by zero because its NULL in PySpark wheras its infinity in Pandas.
 
+# Check for NULL values in a column
+
+## PySpark
+
+```Python
+import pyspark.sql.functions as F 
+
+data.where(F.col("Label").isNull()).show()
+```
+
+# Note
+The result is a DataFrame with the rows where column label has a value of **NULL** (DataFrame may not have any rows if there are no null values to be had.).
+
 # Fill Null Values
 
 ## Pandas
