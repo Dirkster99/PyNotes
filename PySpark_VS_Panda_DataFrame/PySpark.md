@@ -121,7 +121,7 @@ import pyspark.sql.functions as F
 data.where(F.col("Label").isNull()).show()
 ```
 
-# Note
+## Note
 The result is a DataFrame with the rows where column label has a value of **NULL** (DataFrame may not have any rows if there are no null values to be had.).
 
 # Fill Null Values
