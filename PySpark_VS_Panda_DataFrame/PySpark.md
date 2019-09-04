@@ -106,6 +106,9 @@ https://www.youtube.com/watch?v=XrpSRCwISdk
 
 ## Note
 
+The result of the above PySpark expression is a new dataframe object. You need to assign it to a new
+or exsiting `df` variable in order to query/process the value later on.
+
 Be careful with division by zero because its NULL in PySpark wheras its infinity in Pandas.
 
 # Fill Null Values
@@ -115,6 +118,34 @@ Be careful with division by zero because its NULL in PySpark wheras its infinity
 
 ## PySpark
 `df.fillna(0)`
+
+## Note
+
+The result of the above PySpark expression is a new dataframe object. You need to assign it to a new
+or exsiting `df` variable in order to query/process the value later on.
+
+# Compose new Conditional Column Value from 2 Existing Columns
+
+## Summary
+The value in the column 'filtered' was created through a filter condition
+from the 'words' column. Some 'filtered' values ar empty since the filter
+removed in some cases all values from 'words' column. The issue to solve
+here was to compose another **non-null** column value out of 'filtered'
+and 'words' values.
+
+## PySpark
+```Python
+# Column filtered contains an array of strings
+# Column words contains an array of strings
+# -> New Column: FilteredWords contains a filtered value if that array is not empty
+#                otherwise FilteredWords is assigned the value from 'words' column
+#                ('words' column values are always present)
+#
+NewDF = DF.withColumn('FilteredWords',   \
+  F.when(F.size('filtered') == 0, DF['words']) \
+   .otherwise(DF['filtered']))
+```
+
 
 # Aggregation
 
