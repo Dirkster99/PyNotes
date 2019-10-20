@@ -6,3 +6,4 @@ as descriped here: [](http://neuralnetworksanddeeplearning.com/chap1.html#percep
 
 ![](screenshot.png)
 ![](screenshot1.png)
+![](screenshot2.png)

@@ -10,9 +10,11 @@ namespace NandPerceptron.ViewModels
         #region fields
         private byte _Input1, _Input2;
         private byte _Output;
+        private double _Weight2, _Weight1;
         private double _Bias = 3;
 
         private List<BinaryOperation> _NandItems;
+        private double _TempResult;
         #endregion fields
 
         #region ctors
@@ -29,7 +31,9 @@ namespace NandPerceptron.ViewModels
             
             _Input1 = 0;
             _Input2 = 0;
-            OnComputePerceptron(Input1, Input2, Bias);
+            _Weight1 = -2;
+            _Weight2 = -2;
+            OnComputePerceptron(Input1, Weight1, Input2, Weight2, Bias);
         }
         #endregion ctors
 
@@ -48,7 +52,7 @@ namespace NandPerceptron.ViewModels
                     _Input1 = value;
                     NotifyPropertyChanged(() => Input1);
 
-                    OnComputePerceptron(_Input1, _Input2, Bias);
+                    OnComputePerceptron(Input1, Weight1, Input2, Weight2, Bias);
                 }
             }
         }
@@ -67,11 +71,48 @@ namespace NandPerceptron.ViewModels
                     _Input2 = value;
                     NotifyPropertyChanged(() => Input2);
 
-                    OnComputePerceptron(_Input1, _Input2, Bias);
+                    OnComputePerceptron(Input1, Weight1, Input2, Weight2, Bias);
                 }
             }
         }
 
+        /// <summary>
+        /// Gets/sets values for weight parameter 1 (actual values should always be 1 or 0).
+        /// </summary>
+        public double Weight1
+        {
+            get { return _Weight1; }
+
+            set
+            {
+                if (value != _Weight1)
+                {
+                    _Weight1 = value;
+                    NotifyPropertyChanged(() => Weight1);
+
+                    OnComputePerceptron(Input1, Weight1, Input2, Weight2, Bias);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets/sets values for weight parameter 2 (actual values should always be 1 or 0).
+        /// </summary>
+        public double Weight2
+        {
+            get { return _Weight2; }
+
+            set
+            {
+                if (value != _Weight2)
+                {
+                    _Weight2 = value;
+                    NotifyPropertyChanged(() => Weight2);
+
+                    OnComputePerceptron(Input1, Weight1, Input2, Weight2, Bias);
+                }
+            }
+        }
 
         /// <summary>
         /// Gets the Bias which controls with <see cref="Input1"/> and <see cref="Input2"/>
@@ -88,6 +129,32 @@ namespace NandPerceptron.ViewModels
                     _Bias = value;
                     NotifyPropertyChanged(() => Output);
                 }
+            }
+        }
+
+        public double TempResult
+        {
+            get { return _TempResult; }
+
+            protected set
+            {
+                if (value != _TempResult)
+                {
+                    _TempResult = value;
+                    NotifyPropertyChanged(() => TempResult);
+                    NotifyPropertyChanged(() => TempResultDescr);
+                }
+            }
+        }
+
+        public string TempResultDescr
+        {
+            get
+            {
+                if (TempResult <= 0)
+                    return "<= 0";
+                else
+                    return "> 0";
             }
         }
 
@@ -118,14 +185,15 @@ namespace NandPerceptron.ViewModels
         #endregion properties
 
         #region methods
-        private void OnComputePerceptron(double input_1, double input_2, double bias)
+        private void OnComputePerceptron(double input_1, double weight_1
+                                       , double input_2, double weight_2, double bias)
         {
-            var weights = new double[2]{ -2, -2 };
+            var weights = new double[2]{ weight_1, weight_2 };
             var inputs = new double[2] { input_1, input_2 };
 
-            double output = ComputePerceptron(weights, inputs);
+            TempResult = ComputePerceptron(weights, inputs) + bias;
 
-            if ((output + bias) > 0)
+            if (TempResult > 0)
                 Output = 1;
             else
                 Output = 0;

@@ -7,13 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:numupdown="clr-namespace:NumericUpDownLib;assembly=NumericUpDownLib"
     Title="Perceptron Demo"
-    Width="500"
-    Height="350"
+    Width="600"
+    Height="375"
     mc:Ignorable="d">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
@@ -34,24 +35,45 @@
                         Stroke="Black"
                         StrokeThickness="1"
                         X1="24"
-                        X2="85"
                         Y1="30"
+                        
+                        X2="115"
                         Y2="95" />
                     <Line
                         Stroke="Black"
                         StrokeThickness="1"
                         X1="36"
-                        X2="85"
                         Y1="150"
+                        
+                        X2="115"
                         Y2="95" />
 
                     <Line
                         Stroke="Black"
                         StrokeThickness="1"
-                        X1="85"
-                        X2="175"
+                        X1="115"
                         Y1="95"
+
+                        X2="205"
                         Y2="95" />
+
+                    <StackPanel
+                        Canvas.Left="45"
+                        Canvas.Top="50"
+                        Margin="3"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Weight1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,StringFormat='weight 1: {0}'}"/>
+                    </StackPanel>
+
+                    <StackPanel
+                        Canvas.Left="45"
+                        Canvas.Top="130"
+                        Margin="3"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Weight2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,StringFormat='weight 2: {0}'}"/>
+                    </StackPanel>
 
                     <StackPanel
                         Canvas.Left="12"
@@ -76,7 +98,7 @@
                     </StackPanel>
 
                     <Border
-                        Canvas.Left="39"
+                        Canvas.Left="69"
                         Canvas.Top="55"
                         Width="75"
                         Height="75"
@@ -95,7 +117,7 @@
                     </Border>
 
                     <StackPanel
-                        Canvas.Left="175"
+                        Canvas.Left="205"
                         Canvas.Top="75"
                         Margin="3"
                         HorizontalAlignment="Center"
@@ -139,6 +161,16 @@
         </Grid>
 
         <StackPanel Grid.Row="1" Margin="12" Orientation="Vertical">
+            <TextBlock>
+                <TextBlock Text="{Binding Output, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat='Output: {0} =>'}" />
+                <TextBlock Text="{Binding Weight1, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat='({0}) *'}"/><TextBlock Text="{Binding Input1, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat=' {0} + '}"/> 
+                <TextBlock Text="{Binding Weight2, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat='({0}) *'}"/><TextBlock Text="{Binding Input2, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat=' {0}'}"/>
+                <TextBlock Text="{Binding Bias, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat=' + {0}'}"/><TextBlock Text="{Binding TempResult, Mode=OneWay, UpdateSourceTrigger=PropertyChanged,StringFormat=' = {0}'}"/>
+                <TextBlock Text="{Binding TempResultDescr, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="12" Orientation="Vertical">
             <TextBlock>This demo program implements a
                 <TextBlock FontWeight="Bold">Perceptron</TextBlock> that realizes a
                 <TextBlock FontWeight="Bold">NANA</TextBlock> gatter.</TextBlock>
