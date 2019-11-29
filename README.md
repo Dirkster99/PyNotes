@@ -14,6 +14,10 @@ My notebook on using Python with Jupyter Notebook, PySpark and other well known 
 
 - [PySpark Reference Docs](http://spark.apache.org/docs/2.1.0/api/python/pyspark.sql.html)
 
+# SparkNLP
+- [SparkNLP Tutorials](https://github.com/JohnSnowLabs/spark-nlp-workshop/tree/master/tutorials)
+- [PySpark with SparkNLP and TensorFlow in CoLab](https://github.com/Dirkster99/PyNotes/blob/master/PySpark_SparkNLP/TestSparkNLP.ipynb)
+
 # Write a PySpark Array of Strings as String into ONE Parquet File
 
 ## Use Case
