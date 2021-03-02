@@ -1,5 +1,9 @@
 # PyNotes
 
+# Transformers
+
+My notebooks on using [Tranformer](Transformers/Readme.md) models off-line for fine-tuning and prediction purposes.
+
 ## May the Spark :star: be with you
 
 My notebook on using Python with Jupyter Notebook, PySpark and other well known machine learning frameworks.
@@ -69,4 +73,3 @@ dfSave.coalesce(1).write.format('csv').save('/home/me/tokenized.csv')
 # Neural Networks
 
 - [A Perceptron demo program](NeuralNetworks/00_PerceptronDemo/Readme.md)
-
