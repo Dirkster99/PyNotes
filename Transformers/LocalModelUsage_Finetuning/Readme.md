@@ -8,5 +8,5 @@ to implement:
   [30 MultiClass Classification in 10 Minutes with BERT-TensorFlow-SoftMax-LocalModel.ipynb](30%20MultiClass%20Classification%20in%2010%20Minutes%20with%20BERT-TensorFlow-SoftMax-LocalModel.ipynb)  
 
 Every notebook in this folder requires local data and models, which should be useful for those who compute
-in an environment that has no Internet connection. PLease review the []() notebook to find out how Transformers
+in an environment that has no Internet connection. Please review the [distilbert_base_uncased_finetuned_sst_2_english_Model_Download_Save.ipynb](../distilbert_base_uncased_finetuned_sst_2_english_Model_Download_Save.ipynb) notebook to find out how Transformers
 models can be saved for local/fine tuning usage.
