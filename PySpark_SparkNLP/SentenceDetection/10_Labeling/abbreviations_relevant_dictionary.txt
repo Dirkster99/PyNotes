@@ -1,0 +1,386 @@
+-drs.
+1. zivilkammer
+10. zivilkammer
+11. zivilkammer
+12. zivilkammer
+13. zivilkammer
+14. zivilkammer
+15. zivilkammer
+16. zivilkammer
+17. zivilkammer
+18. zivilkammer
+19. zivilkammer
+2. zivilkammer
+20. zivilkammer
+21. zivilkammer
+22. zivilkammer
+23. zivilkammer
+24. zivilkammer
+25. zivilkammer
+26. zivilkammer
+27. zivilkammer
+28. zivilkammer
+29. zivilkammer
+3. zivilkammer
+30. zivilkammer
+31. zivilkammer
+32. zivilkammer
+33. zivilkammer
+34. zivilkammer
+35. zivilkammer
+36. zivilkammer
+37. zivilkammer
+38. zivilkammer
+39. zivilkammer
+4. zivilkammer
+5. zivilkammer
+6. zivilkammer
+7. zivilkammer
+8. zivilkammer
+9  . zivilkammer
+9. zivilkammer
+a.
+aao.
+abbldg.
+abdr.
+abl.
+abs.
+abt.
+akad.
+akt.
+alt.
+amtl.
+anh.
+anl.
+anm.
+art. 1
+art. 2
+art. 3
+art. 4
+art. 5
+art. 6
+art. 7
+art. 8
+art. 9
+art. i
+art. v
+aufl.
+auﬂ.
+az.
+b.
+bac.
+barbarastr.
+bb.
+bd.
+bds.
+befr.
+begr.
+bek.
+bekl.
+ber.
+besch.
+beschl.
+betr.
+bgbl.
+bk.
+bl.
+br-drs.
+bros.
+bsp.
+bspw.
+bstbl.
+bt-drs.
+btdrs.
+btdrucks.
+buchst.
+bverwg.
+bzgl.
+bzw.
+bü.-drs.
+c.
+ca.
+cc.
+d.
+d. h.
+d.h.
+dd.
+ders.
+dez.
+dipl.
+diss.
+doknr.
+dr.
+dres.
+drs.
+drug.
+dr  h.
+dt.
+dvbl.
+e.
+ed.
+einschl.
+emrk.
+erg.
+erl.
+et. al.
+evtl.
+ex.
+exkl.
+f.
+fa.
+febr.
+ff.
+fi.
+fig.
+flnr.
+flurstück-nr.
+fn.
+fr.
+fs.
+g.
+gbl.
+ge.
+geb.
+gebr.
+gem.
+gesbl.
+ggf.
+ggfls.
+ggfs.
+ggü.
+gr.
+grds.
+gv. nrw.
+gvbl.
+gz.
+h.
+ha.
+hamb.
+hauptstr.
+hdb.
+herrenstr.
+hess.
+hmbgvbl.
+hmbjvbl.
+ho.
+hr.
+Hrsg.
+hs.
+hsog.
+höh.
+i.
+i. s.d.
+i.h.v.
+i.s.d.
+i.s.v.
+i.v.m.
+i. s.v.
+i.ü.
+ihv.
+ii.
+iii.
+iii rn.
+imabl.
+inabl.
+inart.
+inc.
+incl.
+ing.
+inkl.
+insb.
+insbes.
+insg.
+insges.
+int.
+intra-nr.
+irisl].
+isd.
+iv.
+ivm.
+ix.
+j.
+jan.
+jew.
+jmbl.
+juris-rdnr.
+juris-rnr.
+k.
+kammerbeschl.
+kap.
+karlstr.
+kat.
+kft.
+kirchstr.
+kostenverzeichnis-nr.
+kp.
+krit.
+krit. anm.
+ktbzw.
+kv-nr.
+kw.
+l.
+lansv.
+lfd.
+lfg.
+li.
+lit.
+ls.
+lt-drs.
+lt-drucks.
+lt.
+ltd.
+m.
+m. ü.
+maternusstr.
+mbl.
+med.
+mill.
+mind.
+mio.
+mit-nr.
+mrd.
+mwst.
+n.
+n.f.
+nachw.
+nds.
+ndsvbl.
+neustadt/wstr.
+no.
+nr.
+nrn.
+nrw-drs.
+nw.
+nwvbl.
+o.
+o. e. i.
+oct.
+okt.
+ovg-az.
+p.
+pkt.
+pos.
+pp.
+prof.
+prog.
+prot. v.
+q.
+r.
+randnr.
+rd.
+rderl.
+rdn.
+rdnr.
+rdnrn.
+re.
+rechnung-nr.
+reg.
+rev.
+rgbl.
+rn .
+rn.
+rndnr.
+rndr.
+rnr.
+rnrn.
+rpfl.
+rpsr.
+rrn.
+rs.
+rspr.
+rthon.
+rz.
+s.
+sch.
+senatsbeschl.
+sep.
+sept.
+sgl.
+slg.
+soc.
+sp.
+spol.
+st.
+st.-georg-str.
+std.
+str.
+strspr.
+sächs.
+t.
+thür.
+tlw.
+tt.
+tz.
+u.
+u. a.
+u.a.
+ua.
+uabs.
+undabl.
+undprof.
+unterabs.
+unterbuchst.
+urnr.
+urt.
+usf.
+ust.
+usw.
+uä.
+v.
+vergl.
+vers.
+vf.
+vgl.
+vi.
+vii.
+viii.
+vol.
+vom.
+vorb.
+vorbem.
+vs.
+vwvfg/art.
+w.
+wilhelmstr.
+www.
+www. f..de
+www.a…de
+www.b-apotheke.de
+www.bestattungen.
+www.bestattungen.de
+www.bundesarbeitsgericht.de.78\n*
+www.bundesarbeitsgericht.de.82\n*
+www.bundesverfassungsgericht.de
+www.bverfg.de
+www.bverwg.de
+www.europaeischer-referenzrahmen.de/englisch-sprachzertifikate.php
+www.europaeischer-referenzrahmen.de/franzoesisch-sprachzertifikate.php
+www.google.com
+www.google.de
+www.hhu.de
+www.klepper.net
+www.nrwe.de
+www.refworld.org/cases,fra_cnda,5ac4ef114.html
+www.state.gov/documents/organization/265676.pdf
+www.vendime.al/43092/
+www.verfassungsblog.de/gehen-oder-bleiben-der-gesetzgeber-kann-sich-nicht-entscheiden/
+www.wikipedia.de
+x.
+xi. senats
+xstr.
+xxv.
+x mio.
+y.
+z.
+zb.
+zh.
+ziff.
+zit.
+zpo/art.
+zul.
+zust.
+zzgl.
+zzt.
+ü.
+– .
+ﬀ.
